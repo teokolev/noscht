@@ -1,0 +1,2159 @@
+/* ---------MENU---------- */
+
+.menu {
+        position: absolute;
+        right: 20px;
+        /* left: -20px; */
+        top: calc(100vh - 40px);
+        height: 17.5px;
+        width: 160px;
+        display: flex;
+        flex-direction: row;
+        z-index: 999999999;
+        /* border: solid 2px red; */
+}
+
+.archive-box {
+        width: 70px;
+        height: 100%;
+        /* border: solid 1px green; */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        position: relative;
+        z-index: 999;
+        mix-blend-mode: difference;
+        cursor: crosshair;
+        text-decoration: none;
+}
+
+.archive-text {
+        width: 100%;
+        height: 100%;
+        /* border: solid 1px yellow; */
+        color: #f5f5f5;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 999;
+        mix-blend-mode: difference;
+}
+
+.pixel-box-1 {
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        /* background-color: aqua; */
+        /* border: solid 1px green; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        mix-blend-mode: difference;
+}
+
+.pixel-box-1 > span {
+        height: 2.5px;
+        width: 2.5px;
+        /* border: solid 0.4px white; */
+        border: solid 0.4px black;
+        padding: 0;
+        margin: 0;
+        transition: border 0.5s;
+        transition-delay: 0.75s;
+}
+
+.contact-box {
+        width: 90px;
+        height: 100%;
+        /* border: solid 1px pink; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 999;
+        mix-blend-mode: difference;
+        cursor: crosshair;
+        text-decoration: none;
+}
+
+.contact-text {
+        width: 100%;
+        height: 100%;
+        /* border: solid 1px yellow; */
+        color: #f5f5f5;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 999;
+        mix-blend-mode: difference;
+}
+
+.pixel-box-2 {
+        width: 90px;
+        height: 100%;
+        position: absolute;
+        left: 70px;
+        z-index: -1;
+        /* background-color: aqua; */
+        /* border: solid 1px green; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        mix-blend-mode: difference;
+}
+
+.pixel-box-2 > span {
+        height: 3px;
+        width: 3px;
+        /* border: solid 0.1px white; */
+        border: solid 0.4px black;
+        padding: 0;
+        margin: 0;
+        transition: border 0.5s;
+        transition-delay: 0.75s;
+}
+
+
+@keyframes fadeIn40 {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0.4;
+  }
+}
+
+.fade-in-40 {
+  animation: fadeIn40 ease 0.1s forwards;
+}
+
+@keyframes fadeIn60 {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0.6;
+  }
+}
+
+.fade-in-60 {
+  animation: fadeIn60 ease 0.1s forwards;
+}
+
+@keyframes fadeIn80 {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 0.8;
+  }
+}
+
+.fade-in-80 {
+  animation: fadeIn80 ease 0.1s forwards;
+}
+
+@keyframes fadeIn100 {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-in-100 {
+  animation: fadeIn100 ease 0.1s forwards;
+}
+
+
+@keyframes fadeOut40 {
+  0% {
+      opacity: 0.4;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.fade-out-40 {
+  animation: fadeOut40 ease 0.1s forwards;
+}
+
+@keyframes fadeOut60 {
+  0% {
+      opacity: 0.6;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.fade-out-60 {
+  animation: fadeOut60 ease 0.1s forwards;
+}
+
+@keyframes fadeOut80 {
+  0% {
+      opacity: 0.8;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.fade-out-80 {
+  animation: fadeOut80 ease 0.1s forwards;
+}
+
+@keyframes fadeOut100 {
+  0% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.fade-out-100 {
+  animation: fadeOut100 ease 0.1s forwards;
+}
+
+
+@keyframes fadeToFull40 {
+  0% {
+      opacity: 0.4;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-full-40 {
+  animation: fadeToFull40 ease 1s forwards;
+}
+
+
+@keyframes fadeToFull60 {
+  0% {
+      opacity: 0.6;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-full-60 {
+  animation: fadeToFull60 ease 1s forwards;
+}
+
+@keyframes fadeToFull80 {
+  0% {
+      opacity: 0.8;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-full-80 {
+  animation: fadeToFull80 ease 1s forwards;
+}
+
+
+@keyframes fadeIn100 {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-in-100 {
+  animation: fadeIn100 ease 0.1s forwards;
+}
+
+
+
+
+.archive-box ~.pixel-box-1 > span {
+  background-color: whitesmoke;
+  opacity: 0;
+}
+
+.archive-box:hover ~.pixel-box-1 > span {
+  border: solid 0.4px transparent;
+  transition: border 0.5s;
+  transition-delay: 0.5s;
+}
+
+.archive-box:not(:hover) ~.pixel-box-1 > span {
+  border: solid 0.4px black;
+  transition: border 0s;
+  transition-delay: 0s;
+}
+
+
+
+
+
+
+
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-1, .archive-box:active ~ .pixel-box-1 > #pixel-l-1 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-2 {
+  animation: fadeIn100 0.3s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-3 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-4 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-5 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-6 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-7 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-8 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-9 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-10 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-11 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-12 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-13 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-14 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-15 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-16 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-17 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-18 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-19 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-20 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-21 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-22 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-23 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-24 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-25 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-26 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-27 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-28 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-29 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-30 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-31 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-32 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-33 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-34 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-35 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-36 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-37 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-38 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-39 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-40 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-41 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-42 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-43 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-44 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-45 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-46 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-47 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-48 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-49 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-50 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-51 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-52 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-53 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-54 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-55 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-56 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-57 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-58 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-59 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-60 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-61 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-62 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-63 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-64 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-65 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-66 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-67 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-68 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-69 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-70 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-71 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-72 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-73 {
+  animation: fadeIn100 0.3s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-74 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-75 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-76 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-77 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-78 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-79 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-80 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-81 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-82 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-83 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-84 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-85 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-86 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-87 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-88 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-89 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-90 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-91 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-92 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-93 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-94 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-95 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-96 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-97 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-98 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-99 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-100 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-101 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-102 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-103 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-104 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-105 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-106 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-107 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-108 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-109 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-110 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-111 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-112 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-113 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-114 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-115 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-116 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-117 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-118 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-119 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-120 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-121 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-122 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-123 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-124 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-125 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-126 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-127 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-128 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-129 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-130 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-131 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-132 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-133 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-134 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-135 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-136 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-137 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-138 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-139 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-140 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-141 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-142 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-143 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-144 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-145 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-146 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-147 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-148 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-149 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-150 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-151 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-152 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-153 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-154 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-155 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-156 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+  
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-157 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-158 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-159 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-160 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.archive-box:hover ~ .pixel-box-1 > #pixel-l-161 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+
+
+
+
+
+/* RIGHT */
+
+
+.contact-box ~.pixel-box-2 > span {
+  background-color: whitesmoke;
+  opacity: 0;
+}
+
+.contact-box:hover ~.pixel-box-2 > span {
+  border: solid 0.4px transparent;
+  transition: border 0.5s;
+  transition-delay: 0.5s;
+}
+
+.contact-box:not(:hover) ~.pixel-box-2 > span {
+  border: solid 0.4px black;
+  transition: border 0s;
+  transition-delay: 0s;
+}
+
+
+
+
+
+
+
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-1, .contact-box:active ~ .pixel-box-2 > #pixel-r-1 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-2 {
+  animation: fadeIn100 0.3s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-3 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-4 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-5 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-6 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-7 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-8 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-9 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-10 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-11 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-12 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-13 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-14 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-15 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-16 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-17 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-18 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-19 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-20 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-21 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-22 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-23 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-24 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-25 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-26 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-27 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-28 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-29 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-30 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-31 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-32 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-33 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-34 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-35 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-36 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-37 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-38 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-39 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-40 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-41 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-42 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-43 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-44 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-45 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-46 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-47 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-48 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-49 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-50 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-51 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-52 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-53 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-54 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-55 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-56 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-57 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-58 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-59 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-60 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-61 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-62 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-63 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-64 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-65 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-66 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-67 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-68 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-69 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-70 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-71 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-72 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-73 {
+  animation: fadeIn100 0.3s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-74 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-75 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-76 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-77 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-78 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-79 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-80 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-81 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-82 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-83 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-84 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-85 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-86 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-87 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-88 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-89 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-90 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-91 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-92 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-93 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-94 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-95 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-96 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-97 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-98 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-99 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-100 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-101 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-102 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-103 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-104 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-105 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-106 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-107 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-108 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-109 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-110 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-111 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-112 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-113 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-114 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-115 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-116 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-117 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-118 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-119 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-120 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-121 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-122 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-123 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-124 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-125 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-126 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-127 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-128 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-129 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-130 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-131 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-132 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-133 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-134 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-135 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-136 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-137 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-138 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-139 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-140 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-141 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-142 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-143 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-144 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-145 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.4s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-146 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-147 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-148 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-149 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-150 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-151 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-152 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.3s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-153 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-154 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-155 {
+  animation: fadeIn40 0.1s ease forwards, fadeToFull40 0.5s ease forwards;
+  animation-delay: 0.05s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-156 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+  
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-157 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-158 {
+  animation: fadeIn60 0.1s ease forwards, fadeToFull60 0.5s ease forwards;
+  animation-delay: 0.2s, 0.5s;
+
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-159 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.15s, 0.5s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-160 {
+  animation: fadeIn100 0.1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.contact-box:hover ~ .pixel-box-2 > #pixel-r-161 {
+  animation: fadeIn80 0.1s ease forwards, fadeToFull80 0.5s ease forwards;
+  animation-delay: 0.25s, 0.5s;
+}
+
+
+
+
+
+
+
+
+
+@keyframes fadeOut100 {
+        0% {
+            opacity: 1;
+        }
+      
+        100% {
+            opacity: 0;
+        }
+}
+
+.fade-out-100-d1 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.025s;
+}
+
+.fade-out-100-d2 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.05s;
+}
+
+.fade-out-100-d3 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.075s;
+}
+
+.fade-out-100-d4 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.1s;
+}
+
+.fade-out-100-d5 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.125s;
+}
+
+.fade-out-100-d6 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.15s;
+}
+
+.fade-out-100-d7 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.175s;
+}
+
+.fade-out-100-d8 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.2s;
+}
+
+.fade-out-100-d9 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.225s;
+}
+
+.fade-out-100-d10 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.25s;
+}
+
+.fade-out-100-d11 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.275s;
+}
+
+.fade-out-100-d12 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.3s;
+}
+
+.fade-out-100-d13 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.325s;
+}
+
+.fade-out-100-d14 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.35s;
+}
+
+.fade-out-100-d15 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.375s;
+}
+
+.fade-out-100-d16 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.4s;
+}
+
+.fade-out-100-d17 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.425s;
+}
+
+.fade-out-100-d18 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.45s;
+}
+
+.fade-out-100-d19 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.475s;
+}
+
+.fade-out-100-d20 {
+        animation: fadeOut100 ease 0.2s forwards;
+        animation-delay: 0.5s;
+}

@@ -11,7 +11,6 @@ html, body {
         &.modal-active {
                 overflow: hidden;
         }
-        
 }
 
 .logo {
@@ -101,22 +100,6 @@ html, body {
         z-index: 666;
         justify-content: space-between;
 }
-      
-/* .container {
-        width: 100vh;
-        height: 100vw;
-        overflow-y: auto;
-        overflow-x: hidden;
-        transform: rotate(-90deg) translateY(100px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 160px;
-        padding: 100px 0;
-        border: solid 1px green;
-        position: relative;
-        z-index: 222;
-} */
 
 
 .parents {
@@ -126,6 +109,8 @@ html, body {
         /* top: 400px; */
         /* top: 50vh; */
 }
+
+/* ------------------------------ PROJECT 1 ------------------------------ */
 
 .parent_1 {
         width: 393.75px;
@@ -187,6 +172,7 @@ html, body {
         font-weight: 600;
 }
 
+/* ------------------------------ PROJECT 2 ------------------------------ */
 
 .parent_2 {
         height: 393.75px;
@@ -226,6 +212,8 @@ html, body {
 .P2_line_1 {
         font-weight: 600;
 }
+
+/* ------------------------------ PROJECT 3 ------------------------------ */
 
 .parent_3 {
         height: 393.75px;
@@ -292,7 +280,7 @@ html, body {
         font-weight: 600;
 }
 
-/* ---------4---------- */
+/* ------------------------------ PROJECT 4 ------------------------------ */
 
 .parent_4 {
         height: 393.75px;
@@ -346,9 +334,19 @@ html, body {
 
 .text_P4 {
         color: #f5f5f5; 
+        margin-left: 12px;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 12px; 
 }
 
-/* ---------5---------- */
+.P4_line_1 {
+        font-weight: 600;
+}
+
+/* ------------------------------ PROJECT 5 ------------------------------ */
 
 .parent_5 {
         height: 393.75px;
@@ -392,15 +390,20 @@ html, body {
 }
 
 .text_P5 {
-        color: #f5f5f5;
-        margin-left: 20px;
-        margin-top: 30px;
+        color: #f5f5f5; 
+        margin-left: 12px;
+        margin-top: 24px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        font-size: 12px; 
 }
 
-/* ---------6---------- */
+.P5_line_1 {
+        font-weight: 600;
+}
+
+/* ------------------------------ PROJECT 6 ------------------------------ */
 
 .parent_6 {
         height: 400px;
@@ -434,6 +437,8 @@ html, body {
         height: 400px;
         margin-top: -100px;
 } */
+
+/* ------------------------------ PROJECT FILLER ------------------------------ */
 
 
 .parent_7 {
@@ -478,15 +483,6 @@ html, body {
 }
 
 @keyframes blur-animation {
-        /* from,
-        to {
-                filter: blur(0px);
-        }
-        10%,
-        90% {
-                filter: blur(4px);
-        } */
-
         0% {
           filter: blur(0px);
         }
@@ -496,7 +492,7 @@ html, body {
         100% {
           filter: blur(4px);
         }
-}
+};
 
 @supports (animation-timeline: view()) {
         .scroll_images {
@@ -549,10 +545,3 @@ html, body {
         -ms-animation:    hideImage 0.5s forwards ease; 
         animation:         hideImage 0.5s forwards ease;
 }
-      
-/* @media (max-width: 600px){
-        .container{
-                height: 350px;
-                padding: 120px 0;
-        }
-} */

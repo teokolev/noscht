@@ -154,7 +154,6 @@ var rectangle1Finished = false;
 archiveItem1.addEventListener('mouseenter', () => {
         if (!rectangle1Finished) {
                 archiveItem1.classList.toggle('black');
-                // archiveItem1.classList.add('archive-text-black');
                 rectangle1.classList.remove('down-leave-active');
                 rectangle1.classList.add('down-enter-active');
                 setTimeout(() => {
@@ -167,8 +166,6 @@ archiveItem1.addEventListener('mouseenter', () => {
 archiveItem1.addEventListener('mouseleave', () => {
         if (rectangle1Finished) {
                 archiveItem1.classList.toggle('black');
-                // archiveItem1.classList.remove('archive-text-black');
-                // archiveItem1.classList.add('archive-item');
                 rectangle1.classList.remove('down-enter-active');
                 rectangle1.classList.add('down-leave-active');
                 setTimeout(() => {

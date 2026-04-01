@@ -2,22 +2,39 @@
 
 .menu {
         position: absolute;
-        right: 20px;
-        /* left: -20px; */
-        top: calc(100vh - 40px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: calc(100% - 25px);
         height: 17.5px;
-        width: 160px;
+        width: fit-content;
         display: flex;
         flex-direction: row;
+        gap: 2px;
         z-index: 999999999;
-        /* border: solid 2px red; */
+        border: solid 2px red;
+}
+
+.mobile-menu-overlay {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: calc(100% + 5px);
+  background-color: black;
+  width: 100vw;
+  height: 100px;
+  mask-image: linear-gradient(to top, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%)
+  /* border: solid 1px yellow; */
 }
 
 .archive-box {
-        width: 70px;
+        width: fit-content;
+        padding-left: 2px;
+        padding-right: 2px;
         height: 100%;
         /* border: solid 1px green; */
         display: flex;
+        background-color: #f5f5f5;
         /* align-items: center; */
         justify-content: center;
         position: relative;
@@ -32,7 +49,7 @@
         height: 100%;
         /* border: solid 1px yellow; */
         color: #f5f5f5;
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -42,7 +59,7 @@
 }
 
 .pixel-box-1 {
-        width: 70px;
+        width: 100%;
         height: 100%;
         position: absolute;
         z-index: -1;
@@ -68,7 +85,9 @@
 }
 
 .contact-box {
-        width: 90px;
+        width: fit-content;
+        padding-left: 2px;
+        padding-right: 2px;
         height: 100%;
         /* border: solid 1px pink; */
         display: flex;
@@ -86,7 +105,7 @@
         height: 100%;
         /* border: solid 1px yellow; */
         color: #f5f5f5;
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,7 +115,7 @@
 }
 
 .pixel-box-2 {
-        width: 90px;
+        width: 100%;
         height: 100%;
         position: absolute;
         left: 70px;
@@ -121,6 +140,139 @@
         transition: border 0.5s;
         transition-delay: 0.75s;
 }
+
+
+
+@media only screen and (min-width: 500px) {
+  .menu {
+    position: absolute;
+    left: unset;
+    transform: unset;
+    right: 20px;
+    top: calc(100vh - 40px);
+    height: 17.5px;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    z-index: 999999999;
+    border: solid 2px green;
+}
+
+.mobile-menu-overlay {
+  display: none;
+}
+
+.archive-box {
+  width: 70px;
+  height: 100%;
+  /* border: solid 1px green; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+  mix-blend-mode: difference;
+  cursor: crosshair;
+  text-decoration: none;
+}
+
+.archive-text {
+  width: 100%;
+  height: 100%;
+  /* border: solid 1px yellow; */
+  color: #f5f5f5;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.pixel-box-1 {
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  /* background-color: aqua; */
+  /* border: solid 1px green; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  mix-blend-mode: difference;
+}
+
+.pixel-box-1 > span {
+  height: 2.5px;
+  width: 2.5px;
+  /* border: solid 0.4px white; */
+  border: solid 0.4px black;
+  padding: 0;
+  margin: 0;
+  transition: border 0.5s;
+  transition-delay: 0.75s;
+}
+
+
+.contact-box {
+  width: 90px;
+  height: 100%;
+  /* border: solid 1px pink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+  mix-blend-mode: difference;
+  cursor: crosshair;
+  text-decoration: none;
+}
+
+.contact-text {
+  width: 100%;
+  height: 100%;
+  /* border: solid 1px yellow; */
+  color: #f5f5f5;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.pixel-box-2 {
+  width: 90px;
+  height: 100%;
+  position: absolute;
+  left: 70px;
+  z-index: -1;
+  /* background-color: aqua; */
+  /* border: solid 1px green; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  mix-blend-mode: difference;
+}
+
+.pixel-box-2 > span {
+  height: 3px;
+  width: 3px;
+  /* border: solid 0.1px white; */
+  border: solid 0.4px black;
+  padding: 0;
+  margin: 0;
+  transition: border 0.5s;
+  transition-delay: 0.75s;
+}
+}
+
 
 
 @keyframes fadeIn40 {

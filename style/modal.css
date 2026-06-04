@@ -463,6 +463,14 @@
     gap: 8px;
     height: 100px;
     min-width: 200px;
+    /* display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2px;
+        height: fit-content;
+        min-width: fit-content;
+        border: solid 1px red; */
   }
 
   .hero-text > * {

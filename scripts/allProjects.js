@@ -11,7 +11,7 @@ const allProjects =
 
                 {id:2,isVideo:true,projectMedia:"../assets/kosta/CONTRALUZ/HOMEPAGE_HERO_CONTRALUZ.mp4",
                         projectName:"CONTRALUZ X MALUMA",projectType:"*HOSPITALITY + BEVERAGE",projectAuthor:"KOSTADIN KOLEV", isSquareParent:false,
-                        assets:[{id:301,isVideo:true,assetMedia:"../assets/kosta/CONTRALUZ/00_HERO_CONTRALUZ.mp4",isText:true,firstText:"CONTRALUZ X MALUMA",secondText:"*HOSPITALITY + BEVERAGE",isFirst:true,assetTexts:['“RAISE A GLASS AND TOAST WITH ME..."', 'HASTA VER LA LUZ!"', "- MEZCAL KISS, MALUMA"]}]},
+                        assets:[{id:301,isVideo:true,assetMedia:"../assets/kosta/CONTRALUZ/00_HERO_CONTRALUZ.mp4",isText:true,firstText:"CONTRALUZ X MALUMA",secondText:"*HOSPITALITY + BEVERAGE",isFirst:false,assetTexts:['“RAISE A GLASS AND TOAST WITH ME..."', 'HASTA VER LA LUZ!"', "- MEZCAL KISS, MALUMA"]}]},
 
                 // {id:2,isVideo:false,projectMedia:"../assets/rene/VICTORIA_BECKHAM/HOMEPAGE_VICTORIA_BECKHAM.png",
                 //         projectName:"VICTORIA BECKHAM - REVERIE",projectType:"*FASHION + LUXURY",projectAuthor:"rene gibson", isSquareParent:true,
@@ -23,7 +23,7 @@ const allProjects =
 
                 {id:3,isVideo:true,projectMedia:"../assets/kosta/CONTRALUZ/HOMEPAGE_HERO_CONTRALUZ.mp4",
                         projectName:"CONTRALUZ X MALUMA",projectType:"*HOSPITALITY + BEVERAGE",projectAuthor:"KOSTADIN KOLEV", isSquareParent:false,
-                        assets:[{id:301,isVideo:true,assetMedia:"../assets/kosta/CONTRALUZ/00_HERO_CONTRALUZ.mp4",isText:true,firstText:"CONTRALUZ X MALUMA",secondText:"*HOSPITALITY + BEVERAGE",isFirst:true,assetTexts:['“RAISE A GLASS AND TOAST WITH ME..."', 'HASTA VER LA LUZ!"', "- MEZCAL KISS, MALUMA"]}]},
+                        assets:[{id:301,isVideo:true,assetMedia:"../assets/kosta/CONTRALUZ/00_HERO_CONTRALUZ.mp4",isText:true,firstText:"CONTRALUZ X MALUMA",secondText:"*HOSPITALITY + BEVERAGE",isFirst:false,assetTexts:['“RAISE A GLASS AND TOAST WITH ME..."', 'HASTA VER LA LUZ!"', "- MEZCAL KISS, MALUMA"]}]},
                 
                 {id:4,isVideo:true,projectMedia:"../assets/milos/RYAN BEATTY ALBUM COVER/HOMEPAGE_RB_ALBUM_COVER.mp4",
                         projectName:"RYAN BEATTY ALBUM COVER",projectType:"*PRODUCT DESIGN",projectAuthor:"milos mihajlov", isSquareParent:false,

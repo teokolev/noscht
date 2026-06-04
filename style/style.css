@@ -2,6 +2,7 @@
         font-family: din-2014, sans-serif;
         font-weight: 300;
         font-style: normal;
+
         --media-height: 393.75px;
         --square-media-width: 393.75px;
         --non-square-media-width: 700px;
@@ -103,7 +104,7 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 120px;
+        gap: 125px;
         padding: 30vh 0px;
         position: relative;
         z-index: 666;
@@ -114,55 +115,43 @@ html, body {
         position: relative;
 }
 
-/* ------------------------------ PROJECT 1 ------------------------------ */
-
-.parent_1 {
-        width: var(--mobile-square-media-width);
-        max-width: var(--mobile-square-media-width);
-        height: var(--mobile-media-height);
-        max-height: var(--mobile-media-height);
-        position: relative;
+.square_asset {
+  width: var(--mobile-square-media-width);
+  max-width: var(--mobile-square-media-width);
+  height: var(--mobile-media-height);
+  max-height: var(--mobile-media-height);
 }
 
-.image_box_1 {
-        width: var(--mobile-square-media-width);
-        max-width: var(--mobile-square-media-width);
-        height: var(--mobile-media-height);
-        max-height: var(--mobile-media-height);
+.nonsquare_asset {
+  width: var(--mobile-non-square-media-width);
+  max-width: var(--mobile-non-square-media-width);
+  height: var(--mobile-non-square-media-height);
+  max-height: var(--mobile-non-square-media-height); 
 }
 
-.video_box_1 {
-        width: var(--mobile-square-media-width);
-        max-width: var(--mobile-square-media-width);
-        height: var(--mobile-media-height);
-        max-height: var(--mobile-media-height);
-}
-
-.video_box_modal_1 {
-        height: 600px;
-        width: 600px;
-        max-width: 600px;
-        max-height: 600px; 
-}
-
-.video_box_modal_1 > video {
-        object-fit: cover;
+.image_box {
         width: 100%;
-        height: 100%;  
+        height: 100%; 
 }
 
-.video_box_1 > video {
+.video_box {
+        width: 100%;
+        height: 100%; 
+}
+
+.video_box > video {
         object-fit: cover;
         width: 100%;
         height: 100%; 
 }
 
-.image_1 {
+.image {
         object-fit: cover;
         width: 100%;
         height: 100%;
 }
 
+/* ------------------------------ PROJECT 1 ------------------------------ */
 .text_P1 {
         color: #f5f5f5;
         margin-left: 12px;
@@ -178,53 +167,6 @@ html, body {
 }
 
 /* ------------------------------ PROJECT 2 ------------------------------ */
-
-.parent_2 {
-        width: var(--mobile-square-media-width);
-        max-width: var(--mobile-square-media-width);
-        height: var(--mobile-media-height);
-        max-height: var(--mobile-media-height);
-        position: relative;
-}
-
-.image_box_2 {
-        width: var(--mobile-square-media-width);
-        max-width: var(--mobile-square-media-width);
-        height: var(--mobile-media-height);
-        max-height: var(--mobile-media-height);
-}
-
-.video_box_2 {
-        width: var(--mobile-square-media-width);
-        max-width: var(--mobile-square-media-width);
-        height: var(--mobile-media-height);
-        max-height: var(--mobile-media-height);
-}
-
-.video_box_modal_2 {
-        height: 600px;
-        width: 600px;
-        max-width: 600px;
-        max-height: 600px; 
-}
-
-.video_box_modal_2 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;  
-}
-
-.video_box_2 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%; 
-}
-
-.image_2 {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-}
 
 .text_P2 {
         color: #f5f5f5;
@@ -242,52 +184,6 @@ html, body {
 
 /* ------------------------------ PROJECT 3 ------------------------------ */
 
-.parent_3 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-        position: relative;
-}
-
-.image_box_3 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-}
-
-.image_3 {
-        height: 100%;
-        width: 100%;
-}
-
-.video_box_3 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-}
-
-.video_box_modal_3 {
-        height: 600px;
-        width: 600px;
-        max-width: 600px;
-        max-height: 600px; 
-}
-
-.video_box_modal_3 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;  
-}
-
-.video_box_3 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%; 
-}
-
 .text_P3 {
         color: #f5f5f5;
         margin-left: 12px;
@@ -303,52 +199,6 @@ html, body {
 }
 
 /* ------------------------------ PROJECT 4 ------------------------------ */
-
-.parent_4 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-        position: relative;
-}
-
-.image_box_4 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height);  
-}
-
-.image_4 {
-        height: 100%;
-        width: 100%;
-}
-
-.video_box_4 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-}
-
-.video_box_modal_4 {
-        height: 600px;
-        width: 600px;
-        max-width: 600px;
-        max-height: 600px; 
-}
-
-.video_box_modal_4 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;  
-}
-
-.video_box_4 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%; 
-}
 
 .text_P4 {
         color: #f5f5f5; 
@@ -366,53 +216,6 @@ html, body {
 
 
 /* ------------------------------ PROJECT 5 ------------------------------ */
-
-.parent_5 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-        position: relative;
-}
-
-.image_box_5 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-}
-
-.image_5 {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-}
-
-.video_box_5 {
-        width: var(--mobile-non-square-media-width);
-        max-width: var(--mobile-non-square-media-width);
-        height: var(--mobile-non-square-media-height);
-        max-height: var(--mobile-non-square-media-height); 
-}
-
-.video_box_modal_5 {
-        height: 600px;
-        width: 600px;
-        max-width: 600px;
-        max-height: 600px; 
-}
-
-.video_box_modal_5 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;  
-}
-
-.video_box_5 > video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%; 
-}
 
 .text_P5 {
         color: #f5f5f5; 
@@ -448,7 +251,7 @@ html, body {
         }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1100px) {
         .logo-container {
                 height: 100px;
                 width: 100px;
@@ -496,9 +299,10 @@ html, body {
                 position: absolute;
                 left: -5vw;
                 /* transform: rotate(-90deg); */
-                bottom: 8vh;
-                height: 70vh;
-                width: 23vw;
+                /* bottom: 20vh; */
+                top: 20vh;
+                height: 100vh;
+                width: 350px;
                 z-index: 888;
                 overflow: hidden;
                 scroll-behavior: unset;
@@ -511,7 +315,6 @@ html, body {
                 overflow-y: auto;
                 overflow-x: hidden;
                 transform: rotate(-90deg);
-                /* border: solid 2px orange; */
                 overflow: hidden;
                 z-index: 444;
         }
@@ -525,7 +328,8 @@ html, body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                /* gap: 160px; */
+                /* --gap-size: 120px;
+                gap: var(--gap-size); */
                 padding: 35vw 0px;
                 /* border: solid 1px green; */
                 position: relative;
@@ -533,6 +337,10 @@ html, body {
                 z-index: 666;
                 justify-content: space-between;
         }
+
+        /* .container:has(.square_asset) {
+                --gap-size: 222px;
+        } */
 
         .parents {
                 transform: rotate(90deg);
@@ -542,53 +350,64 @@ html, body {
                 /* top: 50vh; */
         }
 
-        /* ------------------------------ PROJECT 1 ------------------------------ */
-
-        .parent_1 {
+        .square_asset {
                 width: var(--square-media-width);
                 max-width: var(--square-media-width);
                 height: var(--media-height);
                 max-height: var(--media-height);
-        }
 
-        .image_box_1 {
-                width: var(--square-media-width);
-                max-width: var(--square-media-width);
+                /* margin-top: 120px; */
+        }
+        
+        .nonsquare_asset {
+                width: var(--non-square-media-width);
+                max-width: var(--non-square-media-width);
                 height: var(--media-height);
-                max-height: var(--media-height);
+                max-height: var(--media-height); 
+
+                
         }
 
-        .video_box_1 {
-                width: var(--square-media-width);
-                max-width: var(--square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height);
+        #parent_2 {
+                margin-top: 175px;
         }
 
-        .video_box_modal_1 {
-                height: 600px;
-                width: 600px;
-                max-width: 600px;
-                max-height: 600px; 
+        #parent_3 {
+                margin-top: 350px;
         }
 
-        .video_box_modal_1 > video {
-                object-fit: cover;
+        #parent_4 {
+                margin-top: 350px;
+        }
+
+        #parent_5 {
+                margin-top: 350px;
+        }
+        
+        .image_box {
                 width: 100%;
-                height: 100%;  
+                height: 100%; 
         }
-
-        .video_box_1 > video {
+        
+        .video_box {
+                width: 100%;
+                height: 100%; 
+        }
+        
+        .video_box > video {
                 object-fit: cover;
                 width: 100%;
                 height: 100%; 
         }
-
-        .image_1 {
+        
+        .image {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
         }
+
+        /* ------------------------------ PROJECT 1 ------------------------------ */
+
 
         .text_P1 {
                 color: #f5f5f5;
@@ -606,30 +425,6 @@ html, body {
 
         /* ------------------------------ PROJECT 2 ------------------------------ */
 
-        .parent_2 {
-                width: var(--square-media-width);
-                max-width: var(--square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height);
-                position: relative;
-                /* top: calc(87.5px); */
-                /* top: 300px; */
-        }
-
-        .image_box_2 {
-                width: var(--square-media-width);
-                max-width: var(--square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height);
-                /* border: solid 1px red; */
-        }
-
-        .image_2 {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                /* margin-top: -100px; */
-        }
 
         .text_P2 {
                 color: #f5f5f5;
@@ -647,55 +442,6 @@ html, body {
 
         /* ------------------------------ PROJECT 3 ------------------------------ */
 
-        .parent_3 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-                position: relative;
-                top: calc(160px);
-                /* top: 350px; */
-        }
-
-        .image_box_3 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-        }
-
-        .image_3 {
-                height: 100%;
-                width: 100%;
-                /* margin-top: 50px; */
-        }
-
-        .video_box_3 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-        }
-
-        .video_box_modal_3 {
-                height: 600px;
-                width: 600px;
-                max-width: 600px;
-                max-height: 600px; 
-        }
-
-        .video_box_modal_3 > video {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;  
-        }
-
-        .video_box_3 > video {
-                object-fit: cover;
-                width: 100%;
-                height: 100%; 
-        }
-
         .text_P3 {
                 color: #f5f5f5;
                 margin-left: 12px;
@@ -711,55 +457,6 @@ html, body {
         }
 
         /* ------------------------------ PROJECT 4 ------------------------------ */
-
-        .parent_4 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-                position: relative;
-                top: calc(393.75px + 150px);
-                /* top: 600px; */
-        }
-
-        .image_box_4 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-        }
-
-        .image_4 {
-                height: 100%;
-                width: 100%;
-                /* margin-top: 50px; */
-        }
-
-        .video_box_4 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height);
-        }
-
-        .video_box_modal_4 {
-                height: 600px;
-                width: 600px;
-                max-width: 600px;
-                max-height: 600px; 
-        }
-
-        .video_box_modal_4 > video {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;  
-        }
-
-        .video_box_4 > video {
-                object-fit: cover;
-                width: 100%;
-                height: 100%; 
-        }
 
         .text_P4 {
                 color: #f5f5f5; 
@@ -777,47 +474,6 @@ html, body {
 
 
 /* ------------------------------ PROJECT 5 ------------------------------ */
-
-        .parent_5 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-                position: relative;
-                top: calc(393.75px + 393.75px + 150px);
-        }
-
-        .image_box_5 {
-                width: var(--non-square-media-width);
-                max-width: var(--non-square-media-width);
-                height: var(--media-height);
-                max-height: var(--media-height); 
-        }
-
-        .image_5 {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-        }
-
-        .video_box_modal_5 {
-                height: 600px;
-                width: 600px;
-                max-width: 600px;
-                max-height: 600px; 
-        }
-
-        .video_box_modal_5 > video {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;  
-        }
-
-        .video_box_5 > video {
-                object-fit: cover;
-                width: 100%;
-                height: 100%; 
-        }
 
         .text_P5 {
                 color: #f5f5f5; 
@@ -854,9 +510,12 @@ html, body {
                 }
         
                 .scroll_modal {
+                        /* animation: fade linear both;
+                        animation-timeline: view(y);
+                        animation-range: cover 35% cover 65%; */
                         animation: fade linear both;
                         animation-timeline: view(y);
-                        animation-range: cover 35% cover 65%;
+                        animation-range: cover 55% cover 75%;
                 }
         
                 .test {

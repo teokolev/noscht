@@ -1,10 +1,20 @@
 let mappedData = allProjects.map((a => {
         if (a.isVideo) {
-                return `<div class="parents parent_${a.id} scroll_images" id="parent_${a.id}"><div class="video_box_${a.id}" id="video_box_${a.id}"><video class="" id="video_${a.id}" muted autoplay playsinline preload="metadata" src="${a.projectMedia}" type="video/mp4"></video></div><div class="text_P${a.id}" id="text_P${a.id}"><div class="P${a.id}_line_1" id="P${a.id}_line_1"></div><div class="P${a.id}_line_2" id="P${a.id}_line_2"></div><div class="P${a.id}_line_3" id="P${a.id}_line_3"></div></div></div>`
+                if (a.isSquareParent) {
+                        return `<div class="parents square_asset scroll_images" id="parent_${a.id}"><div class="video_box" id="video_box_${a.id}"><video class="" id="video_${a.id}" muted autoplay playsinline preload="metadata" src="${a.projectMedia}" type="video/mp4"></video></div><div class="text_P${a.id}" id="text_P${a.id}"><div class="P${a.id}_line_1" id="P${a.id}_line_1"></div><div class="P${a.id}_line_2" id="P${a.id}_line_2"></div><div class="P${a.id}_line_3" id="P${a.id}_line_3"></div></div></div>`
+                } else {
+                        return `<div class="parents nonsquare_asset scroll_images" id="parent_${a.id}"><div class="video_box" id="video_box_${a.id}"><video class="" id="video_${a.id}" muted autoplay playsinline preload="metadata" src="${a.projectMedia}" type="video/mp4"></video></div><div class="text_P${a.id}" id="text_P${a.id}"><div class="P${a.id}_line_1" id="P${a.id}_line_1"></div><div class="P${a.id}_line_2" id="P${a.id}_line_2"></div><div class="P${a.id}_line_3" id="P${a.id}_line_3"></div></div></div>`
+                }
         } else {
-                return `<div class="parents parent_${a.id} scroll_images" id="parent_${a.id}"><div class="image_box_${a.id}" id="image_box_${a.id}"><img class="image_${a.id}" src="${a.projectMedia}" style="z-index: -999;"></div><div class="text_P${a.id}" id="text_P${a.id}"><div class="P${a.id}_line_1" id="P${a.id}_line_1"></div><div class="P${a.id}_line_2" id="P${a.id}_line_2"></div><div class="P${a.id}_line_3" id="P${a.id}_line_3"></div></div></div>`
+                if (a.isSquareParent) {
+                        return `<div class="parents square_asset scroll_images" id="parent_${a.id}"><div class="image_box" id="image_box_${a.id}"><img class="image" src="${a.projectMedia}" style="z-index: -999;"></div><div class="text_P${a.id}" id="text_P${a.id}"><div class="P${a.id}_line_1" id="P${a.id}_line_1"></div><div class="P${a.id}_line_2" id="P${a.id}_line_2"></div><div class="P${a.id}_line_3" id="P${a.id}_line_3"></div></div></div>`
+                } else {
+                        return `<div class="parents nonsquare_asset scroll_images" id="parent_${a.id}"><div class="image_box" id="image_box_${a.id}"><img class="image" src="${a.projectMedia}" style="z-index: -999;"></div><div class="text_P${a.id}" id="text_P${a.id}"><div class="P${a.id}_line_1" id="P${a.id}_line_1"></div><div class="P${a.id}_line_2" id="P${a.id}_line_2"></div><div class="P${a.id}_line_3" id="P${a.id}_line_3"></div></div></div>`
+                }
         }
 }));
+
+
 
 container=document.querySelector(".container");
 container.innerHTML+=mappedData.join("");

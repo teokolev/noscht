@@ -47,7 +47,7 @@ function playModalVideos(x) {
 
 var modalScrollContainer = document.getElementById('modal-scroll-container');
 
-
+var allFunctions = [];
 
 
 
@@ -71,9 +71,7 @@ function addVideo1() {
         modalScrollContainer.scrollTop = 0;
         playModalVideos(0);
 };
-const videoBox1 = document.getElementById('video_box_1');
-videoBox1.addEventListener('click', addVideo1, false);
-
+allFunctions.push(addVideo1);
 
 // ----------------------- PROJECT 2 MODAL ----------------------- //
 
@@ -96,8 +94,7 @@ function addVideo2() {
         modalScrollContainer.scrollTop = 0;
         playModalVideos(1);
 };
-const imageBox2 = document.getElementById('image_box_2');
-imageBox2.addEventListener('click', addVideo2, false);
+allFunctions.push(addVideo2);
 
 // ----------------------- PROJECT 3 MODAL ----------------------- //
 
@@ -119,8 +116,7 @@ function addVideo3() {
         modalScrollContainer.innerHTML+=allMappedAssets[2].join("");
         playModalVideos(2);
 };
-const imageBox3 = document.getElementById('video_box_3');
-imageBox3.addEventListener('click', addVideo3, false);
+allFunctions.push(addVideo3);
 
 // ----------------------- PROJECT 4 MODAL ----------------------- //
 
@@ -142,8 +138,27 @@ function addVideo4() {
         modalScrollContainer.innerHTML+=allMappedAssets[3].join("");
         playModalVideos(3);
 };
-const imageBox4 = document.getElementById('video_box_4');
-imageBox4.addEventListener('click', addVideo4, false);
+allFunctions.push(addVideo4);
+
+
+var allProjectIds = []
+
+for (let j=0;j<allProjects.length;j++) {
+        if (allProjects[j].isVideo) {
+                var currentProject = document.getElementById(`video_box_${j+1}`);
+                allProjectIds.push(currentProject)
+        } else {
+                var currentProject = document.getElementById(`image_box_${j+1}`);
+                allProjectIds.push(currentProject) 
+        }
+};
+
+
+
+for (let j=0;j<allProjectIds.length;j++) {
+        var currBox = allProjectIds[j];
+        currBox.addEventListener('click', allFunctions[j], false);
+};
 
 // ----------------------- PROJECT 5 MODAL ----------------------- //
 

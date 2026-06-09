@@ -568,7 +568,7 @@ html, body {
 
         @supports (animation-timeline: view()) {
                 .scroll_images {
-                  animation: fade linear both;
+                  animation: fade ease both;
                   animation-timeline: view(y);
                   animation-range: cover 55% cover 75%;
                   /* border: solid 2px red; */
@@ -661,13 +661,15 @@ html, body {
         from,
         to {
           opacity: 1;
-          filter: blur(4px);
+          filter: blur(8px);
+          transform: scale(1);
           pointer-events: none;
         }
         10%,
         90% {
           opacity: 1;
           filter: blur(0px);
+          transform: scale(1.2);
           pointer-events: all;
         }
 }

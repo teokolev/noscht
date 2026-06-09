@@ -96,7 +96,7 @@
   flex-direction: column;
   align-items: center;
   gap: 160px;
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
   position: relative;
   z-index: 666;
   justify-content: space-between;
@@ -104,7 +104,8 @@
 
 .parents_m {
   position: relative;
-  top: 25vh;
+  top: 15%;
+  /* top: 25vh; */
 }
 
 /* .rect {
@@ -167,16 +168,16 @@
 
 .square_asset_modal {
   width: var(--mobile-square-media-width);
-  max-width: var(--mobile-square-media-width);
+  min-width: var(--mobile-square-media-width);
   height: var(--mobile-media-height);
-  max-height: var(--mobile-media-height);
+  min-height: var(--mobile-media-height);
 }
 
 .nonsquare_asset_modal {
   width: var(--mobile-non-square-media-width);
-  max-width: var(--mobile-non-square-media-width);
+  min-width: var(--mobile-non-square-media-width);
   height: var(--mobile-non-square-media-height);
-  max-height: var(--mobile-non-square-media-height); 
+  min-height: var(--mobile-non-square-media-height); 
 }
 
 .image_box_modal {
@@ -312,11 +313,15 @@
 
   .block-modal {
     background-color: black;
+    /* border: solid 5px red; */
     position: absolute;
     left: -5vw;
+    /* transform: rotate(-90deg); */
+    /* bottom: 20vh; */
+    /* top: 20vh; */
     height: 100vh;
-    width: 23vw;
-    z-index: 899;
+    width: 350px;
+    z-index: 888;
     overflow: hidden;
     scroll-behavior: unset;
     filter: blur(4px);
@@ -330,31 +335,34 @@
     transform: rotate(-90deg);
     overflow: hidden;
     z-index: 444;
+    position: relative;
+    left: 15%;
   }
 
   .modal-scroll-container {
     width: 100vh;
-          height: 100vw;
-          overflow-y: auto;
-          overflow-x: hidden;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 160px;
-          padding: 35vw 0px;
-          position: relative;
-          z-index: 666;
-          justify-content: space-between;
+    height: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 160px; */
+    /* top: 15%; */
+    /* padding: 35vw 0px; */
+    position: relative;
+    z-index: 666;
+    justify-content: space-between;
   }
 
   #parent_102_m {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .parents_m {
     transform: rotate(90deg);
     position: relative;
-    top: 0;
+    /* top: unset; */
   }
 
   .rect {
@@ -417,16 +425,16 @@
 
   .square_asset_modal {
     width: var(--square-media-width);
-    max-width: var(--square-media-width);
+    min-width: var(--square-media-width);
     height: var(--media-height);
-    max-height: var(--media-height);
+    min-height: var(--media-height);
   }
 
   .nonsquare_asset_modal {
     width: var(--non-square-media-width);
-    max-width: var(--non-square-media-width);
+    min-width: var(--non-square-media-width);
     height: var(--media-height);
-    max-height: var(--media-height); 
+    min-height: var(--media-height); 
   }
 
   .image_box_modal {

@@ -3,14 +3,19 @@
         font-weight: 300;
         font-style: normal;
 
-        --media-height: 393.75px;
-        --square-media-width: 393.75px;
-        --non-square-media-width: 700px;
+        --media-height: 70vh;
+        --square-media-width: 70vh;
+        --non-square-media-width: calc((16/9) * 70vh);
 
         --mobile-media-height: 80vw;
         --mobile-square-media-width: 80vw;
         --mobile-non-square-media-height: calc((9/16) * 80vw);
         --mobile-non-square-media-width: 80vw;
+
+        --medium-media-height: 60vw;
+        --medium-square-media-width: 60vw;
+        --medium-non-square-media-height: calc((9/16) * 60vw);
+        --medium-non-square-media-width: 60vw;
 
         --mobile-max-height: -webkit-fill-available;
 }
@@ -251,14 +256,54 @@ html, body {
         }
 }
 
+/* @media screen and (min-width: 600px) and (max-width: 1100px) {
+
+
+        .square_asset {
+                width: var(--medium-square-media-width);
+                max-width: var(--medium-square-media-width);
+                height: var(--medium-media-height);
+                max-height: var(--medium-media-height);
+              }
+              
+              .nonsquare_asset {
+                width: var(--medium-non-square-media-width);
+                max-width: var(--medium-non-square-media-width);
+                height: var(--medium-non-square-media-height);
+                max-height: var(--medium-non-square-media-height); 
+              }
+} */
+
 @media only screen and (min-width: 1100px) {
+        .test_typewriter {
+                border: solid 1px red;
+                position: absolute;
+                top: 200px;
+                height: fit-content;
+                width: fit-content;
+                z-index: 9999999;
+        }
+
+        .test_typewriter > * {
+                /* color: #f5f5f5; */
+                font-size: 24px;
+        }
+
+        .cursor {
+                margin-left: 0.1em;
+                border-right: 0.06em solid;
+                animation: caret 1s steps(1) infinite;
+        }
+
         .logo-container {
-                height: 100px;
-                width: 100px;
+                height: 15vh;
+                width: 15vh;
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                left: 50px;
+                /* right: 10vw; */
+                left: 25px;
+                /* left: 50px; */
                 margin: auto 0;
                 transform: translateX(50px);
                 z-index: 999;
@@ -282,7 +327,7 @@ html, body {
                 align-items: center;
                 justify-content: center;
                 /* transform: translate(-100px); */
-                /* border: solid 1px red; */
+                /* border: solid 4px yellow; */
                 position: relative;
                 z-index: 888;
                 &.leave {
@@ -295,12 +340,12 @@ html, body {
 
         .block {
                 background-color: black;
-                /* border: solid 1px red; */
+                /* border: solid 5px red; */
                 position: absolute;
                 left: -5vw;
                 /* transform: rotate(-90deg); */
                 /* bottom: 20vh; */
-                top: 20vh;
+                /* top: 20vh; */
                 height: 100vh;
                 width: 350px;
                 z-index: 888;
@@ -317,6 +362,12 @@ html, body {
                 transform: rotate(-90deg);
                 overflow: hidden;
                 z-index: 444;
+                /* border: solid 2px red; */
+                position: relative;
+                left: 15%;
+                /* left: 50%; */
+                /* top: 50%; */
+                transform: rotate(-90deg);
         }
 
         .container {
@@ -324,14 +375,16 @@ html, body {
                 height: 100vw;
                 overflow-y: auto;
                 overflow-x: hidden;
+
+                
                 /* transform: translateY(200px); */
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 /* --gap-size: 120px;
                 gap: var(--gap-size); */
-                padding: 35vw 0px;
-                /* border: solid 1px green; */
+                /* padding: 35vw 0px; */
+                /* border: solid 3px green; */
                 position: relative;
                 /* top: 100px; */
                 z-index: 666;
@@ -369,19 +422,31 @@ html, body {
         }
 
         #parent_2 {
-                margin-top: 175px;
+                margin-top: 20vh;
         }
 
         #parent_3 {
-                margin-top: 350px;
+                margin-top: 47.5vh;
         }
 
         #parent_4 {
-                margin-top: 350px;
+                margin-top: 47.5vh;
         }
 
         #parent_5 {
-                margin-top: 350px;
+                margin-top: 47.5vh;
+        }
+
+        #parent_6 {
+                margin-top: 47.5vh;
+        }
+
+        #parent_7 {
+                margin-top: 47.5vh;
+        }
+
+        #parent_9 {
+                width: 5%;
         }
         
         .image_box {

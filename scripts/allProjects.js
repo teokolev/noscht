@@ -9,7 +9,7 @@ const allProjects =
                                 {id:105,isVideo:false,assetMedia:"../assets/nik/WPIM EYEBALL/04_WPIM_EYEBALL.jpg",isSquare:true,isText:false,firstText:"WORLD PEACE INSIDE ME",secondText:"*advertisement",isFirst:false},
                                 {id:106,isVideo:false,assetMedia:"../assets/transparent.png",isSquare:true,isText:false,firstText:"WORLD PEACE INSIDE ME",secondText:"*advertisement",isFirst:false},]},
 
-                {id:2,isVideo:true,projectMedia:"../assets/kosta/CONTRALUZ/HOMEPAGE_HERO_CONTRALUZ.mp4",
+                {id:2,isVideo:true,projectMedia:"../assets/kosta/HOMEPAGE_MARC_JACOBS.mov",
                         projectName:"CONTRALUZ X MALUMA",projectType:"*HOSPITALITY + BEVERAGE",projectAuthor:"KOSTADIN KOLEV", isSquareParent:false,
                         assets:[{id:301,isVideo:true,assetMedia:"../assets/kosta/CONTRALUZ/00_HERO_CONTRALUZ.mp4",isText:true,firstText:"CONTRALUZ X MALUMA",secondText:"*HOSPITALITY + BEVERAGE",isFirst:false,assetTexts:['“RAISE A GLASS AND TOAST WITH ME..."', 'HASTA VER LA LUZ!"', "- MEZCAL KISS, MALUMA"]}]},
 
@@ -36,9 +36,15 @@ const allProjects =
                 {id:5,isVideo:true,projectMedia:"../assets/kosta/FUTURELAND/HOMEPAGE_HERO_FUTURELAND.mp4",projectName:"FUTURELAND",projectType:"*CAMPAIGN",projectAuthor:"kostadin kolev", isSquareParent:false,
                         assets:[]},
 
-                {id:6,isVideo:false,projectMedia:"../assets/transparent.png",projectName:"",projectType:"",projectAuthor:"",
+                {id:6,isVideo:true,projectMedia:"../assets/kosta/HOMEPAGE_MEJURI.mov",projectName:"",projectType:"",projectAuthor:"",
                         assets:[]},
 
-                {id:7,isVideo:false,projectMedia:"../assets/transparent.png",projectName:"",projectType:"",projectAuthor:"",
-                        assets:[]}
+                {id:7,isVideo:true,projectMedia:"../assets/kosta/HOMEPAGE_BIG_SEAN.mov",projectName:"",projectType:"",projectAuthor:"",
+                        assets:[]},
+                
+                {id:8,isVideo:false,projectMedia:"../assets/transparent.png",projectName:"",projectType:"",projectAuthor:"",
+                        assets:[]},
+
+                {id:9,isVideo:false,projectMedia:"../assets/transparent.png",projectName:"",projectType:"",projectAuthor:"",
+                        assets:[]},
         ];

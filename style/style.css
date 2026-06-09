@@ -3,9 +3,9 @@
         font-weight: 300;
         font-style: normal;
 
-        --media-height: 70vh;
-        --square-media-width: 70vh;
-        --non-square-media-width: calc((16/9) * 70vh);
+        --media-height: 60vh;
+        --square-media-width: 60vh;
+        --non-square-media-width: calc((16/9) * 60vh);
 
         --mobile-media-height: 80vw;
         --mobile-square-media-width: 80vw;
